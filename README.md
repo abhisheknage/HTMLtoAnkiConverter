@@ -6,9 +6,15 @@ In essence it becomes a Cornell system of note taking, whereby you're taking not
 
 The basic workflow of making notes and eventually making cards is as follows:
 
-1. Make Notes
-2. Summarize the notes
-3. Review and add cues
+For this program to work ensure that node is installed. Node can be installed from [here](https://nodejs.org/en/).
+
+1. Make Notes in Markdown
+2. Adding HTML tags in Markdown as necessary
+3. Export Markdown to HTML
+4. Run
+   ```javascript
+   node parseHTML.js html_file_to_Ankify
+   ```
 
 When it comes to adding cues, there is a specific syntax that needs to be followed, and for the purposes of this program, the following Anki note types will be supported:
 
@@ -24,10 +30,14 @@ Structure of html should follow the following class names:
 
 ```html
 <div class="anki-basic">
-  <div class="front"></div>
-  <div class="back"></div>
+  <div class="front">Add front content including images here</div>
+  <div class="back">Add back content including images here</div>
 </div>
 ```
+
+This is similar to the Front and Back fields found in Anki notes.
+
+![](assets/2021-01-04-00-55-34.png)
 
 Note: it does not matter if the tag is a div or any other tag, as long as the class matches.
 
@@ -41,11 +51,21 @@ The structure of the file should be as follows:
     This is an example of how to hide <span class="c1">this</span> and
     <span class="c2">that</span> using span and class names of c1 and c2.
   </div>
-  // Will go into the text area
 
-  <div class="extra"></div>
-  // Will go into the extra area
+  <div class="extra">Add extra information including images here</div>
 </div>
 ```
 
-Note: it does not matter if the tag is a div or any other tag, as long as the class matches.
+This is similar to the cloze deletion note type found in Anki.
+
+![](assets/2021-01-04-00-57-16.png)
+
+In essence, HTML tags are added in order to add metadata so as to transcribe to Anki format.
+
+## Adding Pictures
+
+The first step is to add an assets folder in the current working directory, and placing all the images in there. These need to be referenced in the HTML file.
+
+![](assets/2021-01-04-00-59-24.png)
+
+A lot of markdown editors can automatically place images into a folder of your choice (in this case assets), when pasting from your clipboard, so definitely use that to speed up the process of loading images.
