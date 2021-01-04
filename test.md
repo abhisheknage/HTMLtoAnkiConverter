@@ -21,8 +21,3 @@ The <span class="c1"> lungs</span> are a pair of spongy, air-filled organs locat
 
 </div>
 </div>
-
-<div class="anki-basic">
-<div class="front">
-What is the function of lungs?
-</div></div>

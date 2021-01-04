@@ -4,19 +4,39 @@ The aim of this program will be to convert from HTML to Anki cards using JavaScr
 
 In essence it becomes a Cornell system of note taking, whereby you're taking notes, reviewing it and making questions for yourself. There is also opportunity for summarizing that occurs. In essence, this becomes a digitized method of Cornell Note taking system, and leverages spaced repetition through the use of Anki cards.
 
-The basic workflow of making notes and eventually making cards is as follows:
-
 For this program to work ensure that node is installed. Node can be installed from [here](https://nodejs.org/en/).
+
+The basic workflow of making notes and eventually making cards is as follows:
 
 1. Make Notes in Markdown
 2. Adding HTML tags in Markdown as necessary
 3. Export Markdown to HTML
 4. Run
    ```javascript
-   node parseHTML.js html_file_to_Ankify
+   node parseHTML.js html_file_to_Ankify.html
    ```
 
-For your convenience a `test.md` and a `test.html` file has been added, so that you can see what format
+For your convenience a `test.md` and a `test.html` file has been added, so that you can see what format the markdown and HTML file needs to be in.
+
+After downloading this respository, open terminal and run the following commands in the folder to install dependencies :
+
+```
+npm install
+```
+
+Now to test this program on the test.html file, first ensure that the Anki program is open.
+
+Then run:
+
+```
+node parseHTML.js test.html
+```
+
+Voila!!! Hopefully at this point 4 cards have been created in the Anki Notes deck as per below:
+
+![](assets/2021-01-04-01-25-43.png)
+
+## Theory and Deeper Working Knowledge
 
 When it comes to adding cues, there is a specific syntax that needs to be followed, and for the purposes of this program, the following Anki note types will be supported:
 
