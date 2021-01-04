@@ -16,6 +16,8 @@ For this program to work ensure that node is installed. Node can be installed fr
    node parseHTML.js html_file_to_Ankify
    ```
 
+For your convenience a `test.md` and a `test.html` file has been added
+
 When it comes to adding cues, there is a specific syntax that needs to be followed, and for the purposes of this program, the following Anki note types will be supported:
 
 1. Basic
