@@ -16,7 +16,7 @@ For this program to work ensure that node is installed. Node can be installed fr
    node parseHTML.js html_file_to_Ankify
    ```
 
-For your convenience a `test.md` and a `test.html` file has been added
+For your convenience a `test.md` and a `test.html` file has been added, so that you can see what format
 
 When it comes to adding cues, there is a specific syntax that needs to be followed, and for the purposes of this program, the following Anki note types will be supported:
 
@@ -68,6 +68,6 @@ In essence, HTML tags are added in order to add metadata so as to transcribe to 
 
 The first step is to add an assets folder in the current working directory, and placing all the images in there. These need to be referenced in the HTML file.
 
-![](assets/2021-01-04-00-59-24.png)
+![](assets/2021-01-04-01-16-43.png)
 
 A lot of markdown editors can automatically place images into a folder of your choice (in this case assets), when pasting from your clipboard, so definitely use that to speed up the process of loading images.
