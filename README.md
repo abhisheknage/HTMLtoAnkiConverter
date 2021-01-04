@@ -1,10 +1,18 @@
 # HTML to Anki Converter
 
+- [HTML to Anki Converter](#html-to-anki-converter)
+  - [Introduction](#introduction)
+  - [Running a Test Document](#running-a-test-document)
+  - [Theory and Deeper Working Knowledge](#theory-and-deeper-working-knowledge)
+  - [Parse Basic File](#parse-basic-file)
+  - [Parse Cloze Deletions](#parse-cloze-deletions)
+  - [Adding Pictures](#adding-pictures)
+
+## Introduction
+
 The aim of this program will be to convert from HTML to Anki cards using JavaScript. The program will be able to parse through two types of Note types: Basic (Front/Back) and Cloze deletions. The aim of the program is to display a webpage and/or pdf for viewing, but through the use of classes to parse through and generate Anki cards programmatically.
 
 In essence it becomes a Cornell system of note taking, whereby you're taking notes, reviewing it and making questions for yourself. There is also opportunity for summarizing that occurs. In essence, this becomes a digitized method of Cornell Note taking system, and leverages spaced repetition through the use of Anki cards.
-
-For this program to work ensure that node is installed. Node can be installed from [here](https://nodejs.org/en/).
 
 The basic workflow of making notes and eventually making cards is as follows:
 
@@ -16,6 +24,10 @@ The basic workflow of making notes and eventually making cards is as follows:
    node parseHTML.js html_file_to_Ankify.html
    ```
 
+## Running a Test Document
+
+For this program to work ensure that node is installed. Node can be installed from [here](https://nodejs.org/en/).
+
 For your convenience a `test.md` and a `test.html` file has been added, so that you can see what format the markdown and HTML file needs to be in.
 
 After downloading this respository, open terminal and run the following commands in the folder to install dependencies :
@@ -24,7 +36,10 @@ After downloading this respository, open terminal and run the following commands
 npm install
 ```
 
-Now to test this program on the test.html file, first ensure that the Anki program is open.
+Now to test this program on the test.html file,
+
+1. **Ensure that the Anki program is open**.
+2. Download AnkiConnect addon from [here](https://ankiweb.net/shared/info/2055492159)
 
 Then run:
 
