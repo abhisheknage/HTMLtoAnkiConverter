@@ -1,0 +1,25 @@
+{
+  "name": "htmltoankiconverter",
+  "version": "1.0.0",
+  "description": "Converts HTML tags to Anki using the AnkiConnect interface",
+  "main": "parseHTML.js",
+  "dependencies": {
+    "jsdom": "^16.4.0",
+    "node-html-parser": "^2.0.1",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhisheknage/HTMLtoAnkiConverter.git"
+  },
+  "author": "Abhishek Nage",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhisheknage/HTMLtoAnkiConverter/issues"
+  },
+  "homepage": "https://github.com/abhisheknage/HTMLtoAnkiConverter#readme"
+}
